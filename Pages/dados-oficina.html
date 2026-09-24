@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prisma - Dados da Oficina</title>
+
+    <link rel="stylesheet" href="dados-oficina.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    
+    <!-- SIDEBAR -->
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <!-- LOGO DA EMPRESA -->
+        <div class="logo-image">
+            <img src="./imagens/logo-prisma.png" alt="Logo da empresa">
+        </div>
+
+
+    </div>
+
+    <nav class="
+menu">
+
+        <a href="./dashboard.html" class="menu-item active">
+            <i class="fa-solid fa-house"></i>
+            <span>Dashboard</span>
+        </a>
+
+        <a href="./estoque.html" class="menu-item">
+            <i class="fa-solid fa-box"></i>
+            <span>Estoque</span>
+        </a>
+
+        <a href="./" class="menu-item">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>Financeiro</span>
+        </a>
+
+        <a href="./configuracoes.html" class="menu-item">
+            <i class="fa-solid fa-gear"></i>
+            <span>Configurações</span>
+        </a>
+
+        <a href="#" class="menu-item">
+            <i class="fa-solid fa-store"></i>
+            <span>Ver Loja</span>
+        </a>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+
+        <div class="user">
+            <div class="user-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div>
+                <strong>Administrador</strong>
+                <small>Sistema de Gestão</small>
+            </div>
+        </div>
+
+        <i class="fa-solid fa-right-from-bracket logout"></i>
+
+    </div>
+
+</aside>
+
+
+    <!-- CONTEÚDO -->
+    <main class="main">
+
+        <header class="header">
+
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Buscar no sistema..."
+                >
+            </div>
+
+            <div class="header-right">
+
+                <i class="fa-regular fa-bell notification"></i>
+
+                <div class="administrator">
+
+                    <div class="admin-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <span>Administrador</span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PÁGINA -->
+        <section class="content">
+
+            <div class="page-title">
+
+                <div class="section-name">
+                    <i class="fa-solid fa-building"></i>
+                    CONFIGURAÇÕES
+                </div>
+
+                <h1>Dados da Oficina</h1>
+
+                <p>
+                    Gerencie as informações e os dados da sua oficina.
+                </p>
+
+            </div>
+
+
+            <!-- DADOS PRINCIPAIS -->
+            <div class="card">
+
+                <div class="card-header">
+
+                    <div class="card-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <div>
+                        <h2>Informações da oficina</h2>
+
+                        <p>
+                            Essas informações serão utilizadas no sistema.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="form">
+
+                    <div class="input-group">
+
+                        <label>Nome da oficina</label>
+
+                        <input
+                            type="text"
+                            value="Prisma Mecânica"
+                            placeholder="Nome da oficina"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>CNPJ</label>
+
+                        <input
+                            type="text"
+                            value="00.000.000/0001-00"
+                            placeholder="00.000.000/0001-00"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Telefone</label>
+
+                        <input
+                            type="text"
+                            value="(11) 99999-9999"
+                            placeholder="(00) 00000-0000"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>E-mail</label>
+
+                        <input
+                            type="email"
+                            value="contato@prisma.com"
+                            placeholder="contato@oficina.com"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group full">
+
+                        <label>Endereço</label>
+
+                        <input
+                            type="text"
+                            value="Rua das Oficinas, 100"
+                            placeholder="Rua, avenida..."
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Número</label>
+
+                        <input
+                            type="text"
+                            value="100"
+                            placeholder="Número"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Complemento</label>
+
+                        <input
+                            type="text"
+                            placeholder="Sala, bloco..."
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Bairro</label>
+
+                        <input
+                            type="text"
+                            value="Centro"
+                            placeholder="Bairro"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>CEP</label>
+
+                        <input
+                            type="text"
+                            value="00000-000"
+                            placeholder="00000-000"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Cidade</label>
+
+                        <input
+                            type="text"
+                            value="São Paulo"
+                            placeholder="Cidade"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Estado</label>
+
+                        <select>
+
+                            <option>São Paulo</option>
+                            <option>Rio de Janeiro</option>
+                            <option>Minas Gerais</option>
+                            <option>Paraná</option>
+                            <option>Santa Catarina</option>
+                            <option>Rio Grande do Sul</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="buttons">
+
+                    <button class="cancel">
+                        Cancelar
+                    </button>
+
+                    <button class="save">
+                        <i class="fa-solid fa-check"></i>
+                        Salvar alterações
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- HORÁRIO DE FUNCIONAMENTO -->
+            <div class="card">
+
+                <div class="card-header">
+
+                    <div class="card-icon">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+
+                    <div>
+                        <h2>Horário de funcionamento</h2>
+
+                        <p>
+                            Defina os horários em que a oficina funciona.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="hours">
+
+                    <div class="day">
+
+                        <span>Segunda-feira</span>
+
+                        <div>
+                            <input type="time" value="08:00">
+                            <b>até</b>
+                            <input type="time" value="18:00">
+                        </div>
+
+                    </div>
+
+
+                    <div class="day">
+
+                        <span>Terça-feira</span>
+
+                        <div>
+                            <input type="time" value="08:00">
+                            <b>até</b>
+                            <input type="time" value="18:00">
+                        </div>
+
+                    </div>
+
+
+                    <div class="day">
+
+                        <span>Quarta-feira</span>
+
+                        <div>
+                            <input type="time" value="08:00">
+                            <b>até</b>
+                            <input type="time" value="18:00">
+                        </div>
+
+                    </div>
+
+
+                    <div class="day">
+
+                        <span>Quinta-feira</span>
+
+                        <div>
+                            <input type="time" value="08:00">
+                            <b>até</b>
+                            <input type="time" value="18:00">
+                        </div>
+
+                    </div>
+
+
+                    <div class="day">
+
+                        <span>Sexta-feira</span>
+
+                        <div>
+                            <input type="time" value="08:00">
+                            <b>até</b>
+                            <input type="time" value="18:00">
+                        </div>
+
+                    </div>
+
+
+                    <div class="day">
+
+                        <span>Sábado</span>
+
+                        <div class="closed">
+                            Fechado
+                        </div>
+
+                    </div>
+
+
+                    <div class="day">
+
+                        <span>Domingo</span>
+
+                        <div class="closed">
+                            Fechado
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="buttons">
+
+                    <button class="save">
+                        <i class="fa-solid fa-check"></i>
+                        Salvar horários
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- LOGO -->
+            <div class="card">
+
+                <div class="card-header">
+
+                    <div class="card-icon">
+                        <i class="fa-solid fa-image"></i>
+                    </div>
+
+                    <div>
+                        <h2>Logo da oficina</h2>
+
+                        <p>
+                            Altere a logo que aparece no sistema.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="logo-upload">
+
+                    <div class="preview-logo">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>Logo atual</strong>
+
+                        <p>
+                            PNG ou JPG. Tamanho recomendado 500x500px.
+                        </p>
+
+                        <button class="upload">
+                            <i class="fa-solid fa-upload"></i>
+                            Alterar logo
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

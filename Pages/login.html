@@ -1,37 +1,182 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="../CSS/login.css">
+
+    <title>Prisma - Login</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
-    <main>
-        <section>
-            <div class="login-card" id="left">
-                <h2>Login</h2>
-                <form action="">
 
-                    <div class="">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div class="">
-                        <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha">
-                    </div>
+    <div class="login-container">
 
-                    <div>
-                        <a href="#">Esqueceu a senha?</a>
-                    </div>
+        <!-- LOGO -->
+        <div class="logo">
 
-                    <button type="submit">Entrar</button>
-                </form>
+
+            <div class="logo-image">
+            <img src="./imagens/logo-prisma.png" alt="Logo da empresa">
+        </div>
+    
+        </div>
+
+
+        <!-- CARD -->
+        <div class="login-card">
+
+            <div class="login-header">
+
+                <h2>Bem-vindo</h2>
+
+                <p>
+                    Entre na sua conta para acessar o sistema.
+                </p>
+
             </div>
-            <div class="login-card" id="right">
+
+
+            <!-- FORMULÁRIO -->
+            <form action="dashboard.html" method="POST">
+
+                <!-- E-MAIL -->
+                <div class="form-group">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Digite seu e-mail"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- SENHA -->
+                <div class="form-group">
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Digite sua senha"
+                            required
+                        >
+
+                        <i
+                            class="fa-regular fa-eye eye"
+                            onclick="mostrarSenha()"
+                        ></i>
+
+                    </div>
+
+                </div>
+
+
+                <!-- OPÇÕES -->
+                <div class="login-options">
+
+                    <label class="remember">
+
+                        <input type="checkbox">
+
+                        <span>Lembrar de mim</span>
+
+                    </label>
+
+                    <a href="#">
+                        Esqueci minha senha
+                    </a>
+
+                </div>
+
+
+                <!-- BOTÃO -->
+                <button type="submit" class="login-button">
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+
+                    Entrar
+
+                </button>
+
+            </form>
+
+
+            <!-- RODAPÉ -->
+            <div class="login-footer">
+
+                <span>Prisma Mecânica</span>
+
+                <p>
+                    Sistema de Gestão
+                </p>
+
             </div>
-        </section>
-    </main>
+
+        </div>
+
+
+        <div class="copyright">
+            © 2026 Prisma Mecânica. Todos os direitos reservados.
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function mostrarSenha() {
+
+            const senha = document.getElementById("senha");
+
+            const icone = document.querySelector(".eye");
+
+            if (senha.type === "password") {
+
+                senha.type = "text";
+
+                icone.classList.remove("fa-eye");
+                icone.classList.add("fa-eye-slash");
+
+            } else {
+
+                senha.type = "password";
+
+                icone.classList.remove("fa-eye-slash");
+                icone.classList.add("fa-eye");
+
+            }
+
+        }
+
+    </script>
+
 </body>
+
 </html>

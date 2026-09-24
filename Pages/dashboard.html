@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prisma Mecânica - Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <!-- LOGO DA EMPRESA -->
+        <div class="logo-image">
+            <img src="./imagens/logo-prisma.png" alt="Logo da empresa">
+        </div>
+
+
+    </div>
+
+    <nav class="
+menu">
+
+        <a href="./dashboard.html" class="menu-item active">
+            <i class="fa-solid fa-house"></i>
+            <span>Dashboard</span>
+        </a>
+
+        <a href="./estoque.html" class="menu-item">
+            <i class="fa-solid fa-box"></i>
+            <span>Estoque</span>
+        </a>
+
+        <a href="./" class="menu-item">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>Financeiro</span>
+        </a>
+
+        <a href="./configuracoes.html" class="menu-item">
+            <i class="fa-solid fa-gear"></i>
+            <span>Configurações</span>
+        </a>
+
+        <a href="#" class="menu-item">
+            <i class="fa-solid fa-store"></i>
+            <span>Ver Loja</span>
+        </a>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+
+        <div class="user">
+            <div class="user-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div>
+                <strong>Administrador</strong>
+                <small>Sistema de Gestão</small>
+            </div>
+        </div>
+
+        <i class="fa-solid fa-right-from-bracket logout"></i>
+
+    </div>
+
+</aside>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Buscar no sistema...">
+            </div>
+
+            <div class="header-right">
+
+                <i class="fa-regular fa-bell notification"></i>
+
+                <div class="administrator">
+                    <div class="admin-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <span>Administrador</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- DASHBOARD -->
+        <section class="content">
+
+            <div class="page-top">
+
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Visão geral do seu negócio em tempo real.</p>
+                </div>
+
+                <div class="date">
+                    <i class="fa-regular fa-calendar"></i>
+                    Hoje, 16 de Setembro de 2025
+                </div>
+
+            </div>
+
+
+            <!-- CARDS -->
+            <div class="cards">
+
+                <div class="card">
+
+                    <div class="card-icon blue">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+
+                    <span>Total de Produtos</span>
+
+                    <strong>18</strong>
+
+                    <small class="green">
+                        <i class="fa-solid fa-arrow-up"></i>
+                        +2 este mês
+                    </small>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-icon green">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+
+                    <span>Valor em Estoque</span>
+
+                    <strong>R$ 78.993,20</strong>
+
+                    <small>
+                        <i class="fa-regular fa-circle"></i>
+                        Atualizado agora
+                    </small>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-icon red">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+
+                    <span>Estoque Baixo</span>
+
+                    <strong>3</strong>
+
+                    <small class="red-text">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        Necessita atenção
+                    </small>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-icon purple">
+                        <i class="fa-solid fa-right-left"></i>
+                    </div>
+
+                    <span>Movimentações</span>
+
+                    <strong>10</strong>
+
+                    <small>
+                        <i class="fa-regular fa-circle"></i>
+                        Últimos 10 dias
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- ESTOQUE CRÍTICO -->
+            <div class="critical">
+
+                <div class="critical-header">
+
+                    <div class="critical-title">
+
+                        <div class="card-icon red">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+
+                        <div>
+                            <h2>Estoque Crítico</h2>
+                            <p>Itens com menos de 5 unidades.</p>
+                        </div>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </div>
+
+
+                <!-- CABEÇALHO DA TABELA -->
+                <div class="table-header">
+
+                    <span>Produto</span>
+                    <span>Categoria</span>
+                    <span>Quantidade</span>
+                    <span>Status</span>
+
+                </div>
+
+
+                <!-- PRODUTO 1 -->
+                <div class="product">
+
+                    <div class="product-name">
+
+                        <div class="product-image">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+
+                        <span>Pastilhas de freio</span>
+
+                    </div>
+
+                    <span>Freios</span>
+
+                    <div class="quantity">
+                        <strong>18</strong>
+                        <small>uni.</small>
+                    </div>
+
+                    <span class="status critical-status">
+                        <i class="fa-solid fa-circle"></i>
+                        Crítico
+                    </span>
+
+                </div>
+
+
+                <!-- PRODUTO 2 -->
+                <div class="product">
+
+                    <div class="product-name">
+
+                        <div class="product-image">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+
+                        <span>Fusíveis</span>
+
+                    </div>
+
+                    <span>Elétrica</span>
+
+                    <div class="quantity">
+                        <strong>30</strong>
+                        <small>uni.</small>
+                    </div>
+
+                    <span class="status critical-status">
+                        <i class="fa-solid fa-circle"></i>
+                        Crítico
+                    </span>
+
+                </div>
+
+
+                <!-- PRODUTO 3 -->
+                <div class="product">
+
+                    <div class="product-name">
+
+                        <div class="product-image">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+
+                        <span>Mangueiras</span>
+
+                    </div>
+
+                    <span>Arrefecimento</span>
+
+                    <div class="quantity">
+                        <strong>45</strong>
+                        <small>uni.</small>
+                    </div>
+
+                    <span class="status critical-status">
+                        <i class="fa-solid fa-circle"></i>
+                        Crítico
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

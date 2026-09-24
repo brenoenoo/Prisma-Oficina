@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prisma Mecânica - Estoque</title>
+
+    <link rel="stylesheet" href="estoque.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+   
+    <!-- SIDEBAR -->
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <!-- LOGO DA EMPRESA -->
+        <div class="logo-image">
+            <img src="./imagens/logo-prisma.png" alt="Logo da empresa">
+        </div>
+
+
+    </div>
+
+    <nav class="
+menu">
+
+        <a href="./dashboard.html" class="menu-item active">
+            <i class="fa-solid fa-house"></i>
+            <span>Dashboard</span>
+        </a>
+
+        <a href="./estoque.html" class="menu-item">
+            <i class="fa-solid fa-box"></i>
+            <span>Estoque</span>
+        </a>
+
+        <a href="./" class="menu-item">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>Financeiro</span>
+        </a>
+
+        <a href="./configuracoes.html" class="menu-item">
+            <i class="fa-solid fa-gear"></i>
+            <span>Configurações</span>
+        </a>
+
+        <a href="#" class="menu-item">
+            <i class="fa-solid fa-store"></i>
+            <span>Ver Loja</span>
+        </a>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+
+        <div class="user">
+            <div class="user-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div>
+                <strong>Administrador</strong>
+                <small>Sistema de Gestão</small>
+            </div>
+        </div>
+
+        <i class="fa-solid fa-right-from-bracket logout"></i>
+
+    </div>
+
+</aside>
+
+
+    <!-- CONTEÚDO -->
+    <main class="main">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <div class="search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Buscar no sistema..."
+                >
+
+            </div>
+
+            <div class="header-right">
+
+                <i class="fa-regular fa-bell notification"></i>
+
+                <div class="administrator">
+
+                    <div class="admin-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <span>Administrador</span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ESTOQUE -->
+        <section class="content">
+
+            <div class="page-top">
+
+                <div>
+
+                    <div class="section-name">
+                        <i class="fa-solid fa-box"></i>
+                        ESTOQUE
+                    </div>
+
+                    <h1>Controle de <span>Estoque</span></h1>
+
+                    <p>
+                        Gerencie seus produtos, acompanhe os níveis de estoque
+                        e evite a falta de itens no seu dia a dia.
+                    </p>
+
+                </div>
+
+                <button class="new-product">
+                    <i class="fa-solid fa-plus"></i>
+                    Novo Produto
+                </button>
+
+            </div>
+
+
+            <!-- CARDS -->
+            <div class="cards">
+
+                <div class="card">
+
+                    <div class="card-icon blue">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+
+                    <span>Total de Itens</span>
+
+                    <strong>124</strong>
+
+                    <small class="green">
+                        <i class="fa-solid fa-arrow-up"></i>
+                        +5% &nbsp; vs. mês anterior
+                    </small>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-icon red">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+
+                    <span>Itens em Estoque Baixo</span>
+
+                    <strong>8</strong>
+
+                    <small class="orange">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        +2 &nbsp; precisam de reposição
+                    </small>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-icon green">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+
+                    <span>Valor Total em Estoque</span>
+
+                    <strong>R$ 48.230,00</strong>
+
+                    <small class="green">
+                        <i class="fa-solid fa-arrow-up"></i>
+                        +12% &nbsp; vs. mês anterior
+                    </small>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-icon purple">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+
+                    <span>Última Atualização</span>
+
+                    <strong>Hoje, 14:36</strong>
+
+                    <small>
+                        <i class="fa-solid fa-circle live"></i>
+                        Estoque atualizado
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUTOS -->
+            <div class="products-box">
+
+                <div class="products-header">
+
+                    <div class="products-title">
+
+                        <div class="title-icon">
+                            <i class="fa-solid fa-box"></i>
+                        </div>
+
+                        <h2>Produtos em Estoque</h2>
+
+                    </div>
+
+
+                    <div class="actions">
+
+                        <div class="product-search">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                            <input
+                                type="text"
+                                placeholder="Buscar produto..."
+                            >
+
+                        </div>
+
+                        <button class="filter">
+                            <i class="fa-solid fa-filter"></i>
+                        </button>
+
+                        <button class="new-product small">
+                            <i class="fa-solid fa-plus"></i>
+                            Novo Produto
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TABELA -->
+
+                <div class="table">
+
+                    <div class="table-head">
+
+                        <span>Código</span>
+                        <span>Produto</span>
+                        <span>Categoria</span>
+                        <span>Quantidade</span>
+                        <span>Estoque Mínimo</span>
+                        <span>Valor Unitário</span>
+                        <span>Status</span>
+                        <span>Ações</span>
+
+                    </div>
+
+
+                    <!-- PRODUTO -->
+
+                    <div class="table-row">
+
+                        <span>001</span>
+
+                        <div class="product-name">
+                            <div class="product-img">
+                                <i class="fa-solid fa-oil-can"></i>
+                            </div>
+                            Óleo de Motor 5W30
+                        </div>
+
+                        <span>Lubrificantes</span>
+
+                        <span>12</span>
+
+                        <span>5</span>
+
+                        <span>R$ 45,90</span>
+
+                        <span class="status normal">
+                            <i class="fa-solid fa-circle"></i>
+                            Normal
+                        </span>
+
+                        <div class="row-actions">
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <span>002</span>
+
+                        <div class="product-name">
+                            <div class="product-img">
+                                <i class="fa-solid fa-car"></i>
+                            </div>
+                            Pastilha de Freio
+                        </div>
+
+                        <span>Freios</span>
+
+                        <span>3</span>
+
+                        <span>10</span>
+
+                        <span>R$ 89,90</span>
+
+                        <span class="status low">
+                            <i class="fa-solid fa-circle"></i>
+                            Baixo
+                        </span>
+
+                        <div class="row-actions">
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <span>003</span>
+
+                        <div class="product-name">
+                            <div class="product-img">
+                                <i class="fa-solid fa-filter"></i>
+                            </div>
+                            Filtro de Ar
+                        </div>
+
+                        <span>Filtros</span>
+
+                        <span>20</span>
+
+                        <span>5</span>
+
+                        <span>R$ 32,50</span>
+
+                        <span class="status normal">
+                            <i class="fa-solid fa-circle"></i>
+                            Normal
+                        </span>
+
+                        <div class="row-actions">
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <span>004</span>
+
+                        <div class="product-name">
+                            <div class="product-img">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            Vela de Ignição
+                        </div>
+
+                        <span>Ignição</span>
+
+                        <span>8</span>
+
+                        <span>5</span>
+
+                        <span>R$ 18,90</span>
+
+                        <span class="status normal">
+                            <i class="fa-solid fa-circle"></i>
+                            Normal
+                        </span>
+
+                        <div class="row-actions">
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <span>005</span>
+
+                        <div class="product-name">
+                            <div class="product-img">
+                                <i class="fa-solid fa-bottle-droplet"></i>
+                            </div>
+                            Fluido de Freio
+                        </div>
+
+                        <span>Fluidos</span>
+
+                        <span>2</span>
+
+                        <span>5</span>
+
+                        <span>R$ 28,90</span>
+
+                        <span class="status low">
+                            <i class="fa-solid fa-circle"></i>
+                            Baixo
+                        </span>
+
+                        <div class="row-actions">
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <span>006</span>
+
+                        <div class="product-name">
+                            <div class="product-img">
+                                <i class="fa-solid fa-circle"></i>
+                            </div>
+                            Pneu 195/60 R15
+                        </div>
+
+                        <span>Pneus</span>
+
+                        <span>4</span>
+
+                        <span>8</span>
+
+                        <span>R$ 529,90</span>
+
+                        <span class="status low">
+                            <i class="fa-solid fa-circle"></i>
+                            Baixo
+                        </span>
+
+                        <div class="row-actions">
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <span>007</span>
+
+                        <div class="product-name">
+                            <div class="product-img">
+                                <i class="fa-solid fa-car-battery"></i>
+                            </div>
+                            Bateria 60Ah
+                        </div>
+
+                        <span>Elétrica</span>
+
+                        <span>15</span>
+
+                        <span>5</span>
+
+                        <span>R$ 399,90</span>
+
+                        <span class="status normal">
+                            <i class="fa-solid fa-circle"></i>
+                            Normal
+                        </span>
+
+                        <div class="row-actions">
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <span>008</span>
+
+                        <div class="product-name">
+                            <div class="product-img">
+                                <i class="fa-solid fa-droplet"></i>
+                            </div>
+                            Aditivo de Radiador
+                        </div>
+
+                        <span>Fluidos</span>
+
+                        <span>7</span>
+
+                        <span>5</span>
+
+                        <span>R$ 24,90</span>
+
+                        <span class="status normal">
+                            <i class="fa-solid fa-circle"></i>
+                            Normal
+                        </span>
+
+                        <div class="row-actions">
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

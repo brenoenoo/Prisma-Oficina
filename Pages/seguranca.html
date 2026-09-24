@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prisma - Segurança</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="seguranca.css">
+</head>
+
+<body>
+
+    
+    <!-- SIDEBAR -->
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <!-- LOGO DA EMPRESA -->
+        <div class="logo-image">
+            <img src="./imagens/logo-prisma.png" alt="Logo da empresa">
+        </div>
+
+
+    </div>
+
+    <nav class="
+menu">
+
+        <a href="./dashboard.html" class="menu-item active">
+            <i class="fa-solid fa-house"></i>
+            <span>Dashboard</span>
+        </a>
+
+        <a href="./estoque.html" class="menu-item">
+            <i class="fa-solid fa-box"></i>
+            <span>Estoque</span>
+        </a>
+
+        <a href="./" class="menu-item">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>Financeiro</span>
+        </a>
+
+        <a href="./configuracoes.html" class="menu-item">
+            <i class="fa-solid fa-gear"></i>
+            <span>Configurações</span>
+        </a>
+
+        <a href="#" class="menu-item">
+            <i class="fa-solid fa-store"></i>
+            <span>Ver Loja</span>
+        </a>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+
+        <div class="user">
+            <div class="user-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div>
+                <strong>Administrador</strong>
+                <small>Sistema de Gestão</small>
+            </div>
+        </div>
+
+        <i class="fa-solid fa-right-from-bracket logout"></i>
+
+    </div>
+
+</aside>
+
+
+    <!-- CONTEÚDO -->
+    <main class="main">
+
+        <!-- HEADER -->
+        <header>
+
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Pesquisar...">
+            </div>
+
+            <div class="header-right">
+
+                <i class="fa-regular fa-bell notification"></i>
+
+                <div class="profile">
+
+                    <div class="profile-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div>
+                        <strong>Administrator</strong>
+                        <small>Administrador</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- TÍTULO -->
+        <section class="page-title">
+
+            <h1>Segurança</h1>
+
+            <p>
+                Gerencie a segurança e o acesso ao sistema.
+            </p>
+
+        </section>
+
+
+        <!-- CONTEÚDO -->
+        <section class="security-container">
+
+
+            <!-- ALTERAR SENHA -->
+            <div class="security-card">
+
+                <div class="card-title">
+
+                    <div class="title-icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+
+                    <div>
+                        <h2>Alterar senha</h2>
+                        <p>
+                            Atualize a senha da sua conta de administrador.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <form>
+
+                    <div class="form-group">
+
+                        <label>Senha atual</label>
+
+                        <div class="password-input">
+
+                            <input
+                                type="password"
+                                placeholder="Digite sua senha atual"
+                            >
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Nova senha</label>
+
+                        <div class="password-input">
+
+                            <input
+                                type="password"
+                                placeholder="Digite a nova senha"
+                            >
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Confirmar nova senha</label>
+
+                        <div class="password-input">
+
+                            <input
+                                type="password"
+                                placeholder="Digite novamente a nova senha"
+                            >
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="btn-save">
+                        <i class="fa-solid fa-check"></i>
+                        Alterar senha
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            
+
+            <!-- SESSÕES -->
+            <div class="security-card">
+
+                <div class="card-title">
+
+                    <div class="title-icon">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+
+                    <div>
+                        <h2>Sessões ativas</h2>
+                        <p>
+                            Dispositivos conectados à sua conta.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="session">
+
+                    <div class="session-icon">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+
+                    <div class="session-info">
+
+                        <strong>Computador atual</strong>
+
+                        <span>
+                            Chrome • Windows
+                        </span>
+
+                    </div>
+
+                    <span class="current">
+                        Sessão atual
+                    </span>
+
+                </div>
+
+
+                <div class="session">
+
+                    <div class="session-icon">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+
+                    <div class="session-info">
+
+                        <strong>Dispositivo móvel</strong>
+
+                        <span>
+                            Chrome • Android
+                        </span>
+
+                    </div>
+
+                    <button class="btn-remove">
+                        Encerrar
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ATIVIDADE -->
+            <div class="security-card">
+
+                <div class="card-title">
+
+                    <div class="title-icon">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+
+                    <div>
+                        <h2>Atividade recente</h2>
+                        <p>
+                            Últimas atividades realizadas na conta.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="activity">
+
+                    <div class="activity-icon">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </div>
+
+                    <div>
+                        <strong>Login realizado</strong>
+                        <span>Hoje às 08:32</span>
+                    </div>
+
+                </div>
+
+
+                <div class="activity">
+
+                    <div class="activity-icon">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+
+                    <div>
+                        <strong>Senha alterada</strong>
+                        <span>Ontem às 15:20</span>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

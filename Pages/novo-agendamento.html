@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prisma - Novo Agendamento</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="novo-agendamento.css">
+</head>
+
+<body>
+
+
+    <!-- SIDEBAR -->
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <!-- LOGO DA EMPRESA -->
+        <div class="logo-image">
+            <img src="./imagens/logo-prisma.png" alt="Logo da empresa">
+        </div>
+
+
+    </div>
+
+    <nav class="
+menu">
+
+        <a href="./dashboard.html" class="menu-item active">
+            <i class="fa-solid fa-house"></i>
+            <span>Dashboard</span>
+        </a>
+
+        <a href="./estoque.html" class="menu-item">
+            <i class="fa-solid fa-box"></i>
+            <span>Estoque</span>
+        </a>
+
+        <a href="./" class="menu-item">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>Financeiro</span>
+        </a>
+
+        <a href="./configuracoes.html" class="menu-item">
+            <i class="fa-solid fa-gear"></i>
+            <span>Configurações</span>
+        </a>
+
+        <a href="#" class="menu-item">
+            <i class="fa-solid fa-store"></i>
+            <span>Ver Loja</span>
+        </a>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+
+        <div class="user">
+            <div class="user-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div>
+                <strong>Administrador</strong>
+                <small>Sistema de Gestão</small>
+            </div>
+        </div>
+
+        <i class="fa-solid fa-right-from-bracket logout"></i>
+
+    </div>
+
+</aside>
+
+
+    <!-- CONTEÚDO -->
+    <main class="main">
+
+        <!-- HEADER -->
+        <header>
+
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Pesquisar...">
+            </div>
+
+            <div class="header-right">
+
+                <i class="fa-regular fa-bell notification"></i>
+
+                <div class="profile">
+
+                    <div class="profile-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div>
+                        <strong>Administrator</strong>
+                        <small>Administrador</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- TÍTULO -->
+        <section class="page-title">
+
+            <div>
+                <h1>Novo Agendamento</h1>
+
+                <p>
+                    Cadastre um novo serviço para um cliente.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- FORMULÁRIO -->
+        <section class="form-card">
+
+            <form>
+
+
+                <!-- CLIENTE -->
+                <div class="form-section">
+
+                    <div class="section-title">
+
+                        <div class="section-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <div>
+                            <h2>Dados do cliente</h2>
+                            <p>Informe os dados do cliente.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label>Nome do cliente</label>
+
+                            <input
+                                type="text"
+                                placeholder="Digite o nome do cliente"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Telefone</label>
+
+                            <input
+                                type="tel"
+                                placeholder="(00) 00000-0000"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>CPF</label>
+
+                            <input
+                                type="text"
+                                placeholder="000.000.000-00"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>E-mail</label>
+
+                            <input
+                                type="email"
+                                placeholder="cliente@email.com"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- VEÍCULO -->
+                <div class="form-section">
+
+                    <div class="section-title">
+
+                        <div class="section-icon">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+
+                        <div>
+                            <h2>Dados do veículo</h2>
+                            <p>Informe os dados do veículo do cliente.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label>Marca</label>
+
+                            <select>
+
+                                <option value="">
+                                    Selecione a marca
+                                </option>
+
+                                <option>Chevrolet</option>
+                                <option>Fiat</option>
+                                <option>Ford</option>
+                                <option>Honda</option>
+                                <option>Hyundai</option>
+                                <option>Toyota</option>
+                                <option>Volkswagen</option>
+                                <option>Outros</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Modelo</label>
+
+                            <input
+                                type="text"
+                                placeholder="Ex: Civic"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Ano</label>
+
+                            <input
+                                type="number"
+                                placeholder="2024"
+                                min="1900"
+                                max="2100"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Placa</label>
+
+                            <input
+                                type="text"
+                                placeholder="ABC-1234"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SERVIÇO -->
+                <div class="form-section">
+
+                    <div class="section-title">
+
+                        <div class="section-icon">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+
+                        <div>
+                            <h2>Serviço</h2>
+                            <p>Informe o serviço que será realizado.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label>Tipo de serviço</label>
+
+                            <select>
+
+                                <option value="">
+                                    Selecione o serviço
+                                </option>
+
+                                <option>Troca de óleo</option>
+                                <option>Revisão</option>
+                                <option>Manutenção dos freios</option>
+                                <option>Alinhamento</option>
+                                <option>Balanceamento</option>
+                                <option>Suspensão</option>
+                                <option>Motor</option>
+                                <option>Elétrica</option>
+                                <option>Diagnóstico</option>
+                                <option>Outro</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Mecânico responsável</label>
+
+                            <select>
+
+                                <option value="">
+                                    Selecione o mecânico
+                                </option>
+
+                                <option>André Costa</option>
+                                <option>Marcos Silva</option>
+                                <option>João Pereira</option>
+                                <option>Rafael Lima</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Data</label>
+
+                            <input type="date">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Horário</label>
+
+                            <input type="time">
+
+                        </div>
+
+
+                        <div class="form-group full">
+
+                            <label>Observações</label>
+
+                            <textarea
+                                rows="5"
+                                placeholder="Digite alguma observação sobre o serviço..."
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STATUS -->
+                <div class="form-section">
+
+                    <div class="section-title">
+
+                        <div class="section-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+
+                        <div>
+                            <h2>Status</h2>
+                            <p>Defina o status inicial do agendamento.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="status-options">
+
+                        <label class="status-option">
+
+                            <input
+                                type="radio"
+                                name="status"
+                                checked
+                            >
+
+                            <span class="status-radio"></span>
+
+                            <div>
+                                <strong>Agendado</strong>
+                                <small>Serviço aguardando atendimento.</small>
+                            </div>
+
+                        </label>
+
+
+                        <label class="status-option">
+
+                            <input
+                                type="radio"
+                                name="status"
+                            >
+
+                            <span class="status-radio"></span>
+
+                            <div>
+                                <strong>Confirmado</strong>
+                                <small>Cliente confirmou o horário.</small>
+                            </div>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOTÕES -->
+                <div class="form-buttons">
+
+                    <a
+                        href="agendamento.html"
+                        class="btn-cancel"
+                    >
+                        Cancelar
+                    </a>
+
+                    <button
+                        type="submit"
+                        class="btn-save"
+                    >
+                        <i class="fa-solid fa-calendar-plus"></i>
+                        Criar agendamento
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
