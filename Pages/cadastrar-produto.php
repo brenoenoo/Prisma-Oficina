@@ -12,8 +12,6 @@
 
     
 <?php require_once "sidebar.php" ?>
-
-
     <!-- MAIN -->
     <main class="main">
         <!-- HEADER -->

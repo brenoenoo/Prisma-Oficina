@@ -10,8 +10,6 @@
 <body>
 
 <?php require_once "sidebar.php" ?>
-
-
     <!-- CONTEÚDO PRINCIPAL -->
     <main class="main">
 

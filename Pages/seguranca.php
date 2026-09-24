@@ -15,8 +15,6 @@
 
     
 <?php require_once "sidebar.php" ?>
-
-
     <!-- CONTEÚDO -->
     <main class="main">
 
