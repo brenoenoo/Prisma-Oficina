@@ -1,0 +1,66 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 280px;
+    height: 100vh;
+
+    background: #061326;
+    border-right: 1px solid #1c3149;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 28px 16px;
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding: 0 18px 35px;
+}
+
+.logo-image {
+    width: 250px;
+    height: auto;
+
+    border-radius: 10px;
+    margin-left: -30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.logo-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    display: block;
+}
+
+.logo h2 {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #159cff;
+
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
