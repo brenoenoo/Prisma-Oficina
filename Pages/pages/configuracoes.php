@@ -11,7 +11,7 @@
 <body>
 
    
-<?php require_once "sidebar.php" ?>
+<?php require_once "./partials/sidebar.php" ?>
     <main class="main">
 
         <?php require_once "./partials/header.php" ?>

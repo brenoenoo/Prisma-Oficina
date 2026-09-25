@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="./partials-css/header.css">
+
 <header class="header">
 
             <div class="search">
@@ -25,3 +27,4 @@
                 </div>
             </div>
         </header>
+        
