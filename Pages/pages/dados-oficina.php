@@ -12,42 +12,11 @@
 <body>
     <?php require_once "sidebar.php" ?>
 
-    <!-- CONTEÚDO -->
     <main class="main">
 
-        <header class="header">
-
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-
-                <input
-                    type="text"
-                    placeholder="Buscar no sistema..."
-                >
-            </div>
-
-            <div class="header-right">
-
-                <i class="fa-regular fa-bell notification"></i>
-
-                <div class="administrator">
-
-                    <div class="admin-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-
-                    <span>Administrador</span>
-
-                    <i class="fa-solid fa-chevron-down"></i>
-
-                </div>
-
-            </div>
-
-        </header>
+        <?php require_once "./partials/header.php" ?>
 
 
-        <!-- PÁGINA -->
         <section class="content">
 
             <div class="page-title">
@@ -66,7 +35,6 @@
             </div>
 
 
-            <!-- DADOS PRINCIPAIS -->
             <div class="card">
 
                 <div class="card-header">
@@ -253,7 +221,6 @@
             </div>
 
 
-            <!-- HORÁRIO DE FUNCIONAMENTO -->
             <div class="card">
 
                 <div class="card-header">
@@ -376,7 +343,6 @@
             </div>
 
 
-            <!-- LOGO -->
             <div class="card">
 
                 <div class="card-header">

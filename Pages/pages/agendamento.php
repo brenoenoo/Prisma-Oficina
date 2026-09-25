@@ -11,38 +11,13 @@
 
 <body>
 
-<?php require_once "sidebar.php" ?>
+<?php require_once "./partials/sidebar.php" ?>
 
     <main class="main">
 
-        <!-- HEADER -->
-        <header>
-
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Pesquisar...">
-            </div>
-
-            <div class="header-right">
-                <i class="fa-regular fa-bell notification"></i>
-
-                <div class="profile">
-
-                    <div class="profile-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-
-                    <div>
-                        <strong>Administrator</strong>
-                        <small>Administrador</small>
-                    </div>
-
-                </div>
-            </div>
-        </header>
+    <?php require_once "./partials/header.php" ?>
 
 
-        <!-- TÍTULO -->
         <section class="page-title">
             <div>
                 <h1>Agendamento</h1>
@@ -59,7 +34,6 @@
         </section>
 
 
-        <!-- FILTROS -->
         <section class="filters">
             <div class="filter">
 
@@ -101,7 +75,6 @@
         </section>
 
 
-        <!-- AGENDAMENTOS -->
         <section class="appointments">
             <div class="section-header">
                 <div>
@@ -115,7 +88,6 @@
             </div>
 
 
-            <!-- AGENDAMENTO 1 -->
             <div class="appointment">
                 <div class="time">
                     <strong>08:00</strong>
@@ -151,7 +123,6 @@
             </div>
 
 
-            <!-- AGENDAMENTO 2 -->
             <div class="appointment">
                 <div class="time">
                     <strong>10:00</strong>
@@ -187,7 +158,6 @@
             </div>
 
 
-            <!-- AGENDAMENTO 3 -->
             <div class="appointment">
                 <div class="time">
                     <strong>13:30</strong>
@@ -224,7 +194,6 @@
             </div>
 
 
-            <!-- AGENDAMENTO 4 -->
             <div class="appointment">
                 <div class="time">
                     <strong>15:30</strong>

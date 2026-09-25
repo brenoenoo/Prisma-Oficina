@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="./partials-css/sidebar.css">
+
 <aside class="sidebar">
 
     <div class="logo">

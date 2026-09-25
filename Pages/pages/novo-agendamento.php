@@ -14,40 +14,11 @@
 
 
 <?php require_once "sidebar.php" ?>
-    <!-- CONTEÚDO -->
     <main class="main">
 
-        <!-- HEADER -->
-        <header>
-
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Pesquisar...">
-            </div>
-
-            <div class="header-right">
-
-                <i class="fa-regular fa-bell notification"></i>
-
-                <div class="profile">
-
-                    <div class="profile-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-
-                    <div>
-                        <strong>Administrator</strong>
-                        <small>Administrador</small>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </header>
+        <?php require_once "./partials/header.php" ?>
 
 
-        <!-- TÍTULO -->
         <section class="page-title">
 
             <div>
@@ -61,13 +32,11 @@
         </section>
 
 
-        <!-- FORMULÁRIO -->
         <section class="form-card">
 
             <form>
 
 
-                <!-- CLIENTE -->
                 <div class="form-section">
 
                     <div class="section-title">
@@ -138,7 +107,6 @@
                 </div>
 
 
-                <!-- VEÍCULO -->
                 <div class="form-section">
 
                     <div class="section-title">
@@ -223,7 +191,6 @@
                 </div>
 
 
-                <!-- SERVIÇO -->
                 <div class="form-section">
 
                     <div class="section-title">
@@ -322,7 +289,6 @@
                 </div>
 
 
-                <!-- STATUS -->
                 <div class="form-section">
 
                     <div class="section-title">
@@ -380,7 +346,6 @@
                 </div>
 
 
-                <!-- BOTÕES -->
                 <div class="form-buttons">
 
                     <a

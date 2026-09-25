@@ -11,40 +11,12 @@
 <body>
 
     
-<?php require_once "sidebar.php" ?>
-    <!-- MAIN -->
+<?php require_once "./partials/sidebar.php" ?>
     <main class="main">
-        <!-- HEADER -->
-        <header class="header">
 
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-
-                <input
-                    type="text"
-                    placeholder="Buscar no sistema..."
-                >
-            </div>
-
-            <div class="header-right">
-
-                <i class="fa-regular fa-bell notification"></i>
-
-                <div class="administrator">
-
-                    <div class="admin-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-
-                    <span>Administrador</span>
-
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-            </div>
-        </header>
+    <?php require_once "./partials/header.php" ?>
 
 
-        <!-- CONTEÚDO -->
         <section class="content">
             <div class="page-title">
                 <div class="section-name">
@@ -60,7 +32,6 @@
             </div>
 
 
-            <!-- FORMULÁRIO -->
             <div class="card">
                 <div class="card-header">
 
@@ -79,7 +50,6 @@
 
 
                 <form class="form">
-                    <!-- NOME -->
                     <div class="input-group full">
 
                         <label>Nome do produto</label>
@@ -92,7 +62,6 @@
                     </div>
 
 
-                    <!-- CÓDIGO -->
                     <div class="input-group">
                         <label>Código do produto</label>
 
@@ -103,7 +72,6 @@
                     </div>
 
 
-                    <!-- CATEGORIA -->
                     <div class="input-group">
 
                         <label>Categoria</label>
@@ -147,7 +115,6 @@
                     </div>
 
 
-                    <!-- MARCA -->
                     <div class="input-group">
 
                         <label>Marca</label>
@@ -160,7 +127,6 @@
                     </div>
 
 
-                    <!-- UNIDADE -->
                     <div class="input-group">
 
                         <label>Unidade</label>
@@ -179,7 +145,6 @@
                     </div>
 
 
-                    <!-- QUANTIDADE -->
                     <div class="input-group">
 
                         <label>Quantidade em estoque</label>
@@ -194,7 +159,6 @@
                     </div>
 
 
-                    <!-- ESTOQUE MÍNIMO -->
                     <div class="input-group">
 
                         <label>Estoque mínimo</label>
@@ -208,7 +172,6 @@
                     </div>
 
 
-                    <!-- PREÇO DE CUSTO -->
                     <div class="input-group">
 
                         <label>Preço de custo</label>
@@ -229,7 +192,6 @@
                     </div>
 
 
-                    <!-- PREÇO DE VENDA -->
                     <div class="input-group">
 
                         <label>Preço de venda</label>
@@ -250,7 +212,6 @@
                     </div>
 
 
-                    <!-- FORNECEDOR -->
                     <div class="input-group">
 
                         <label>Fornecedor</label>
@@ -263,7 +224,6 @@
                     </div>
 
 
-                    <!-- LOCALIZAÇÃO -->
                     <div class="input-group">
 
                         <label>Localização no estoque</label>
@@ -276,7 +236,6 @@
                     </div>
 
 
-                    <!-- DESCRIÇÃO -->
                     <div class="input-group full">
 
                         <label>Descrição</label>
@@ -288,7 +247,6 @@
                     </div>
 
 
-                    <!-- STATUS -->
                     <div class="input-group">
 
                         <label>Status</label>
@@ -306,7 +264,6 @@
                 </form>
 
 
-                <!-- BOTÕES -->
                 <div class="buttons">
 
                     <a href="estoque.html" class="cancel">

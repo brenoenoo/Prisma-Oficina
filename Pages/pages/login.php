@@ -13,7 +13,6 @@
 <body>
 
     <div class="login-container">
-        <!-- LOGO -->
         <div class="logo">
 
 
@@ -24,7 +23,6 @@
         </div>
 
 
-        <!-- CARD -->
         <div class="login-card">
 
             <div class="login-header">
@@ -38,10 +36,8 @@
             </div>
 
 
-            <!-- FORMULÁRIO -->
             <form action="dashboard.html" method="POST">
 
-                <!-- E-MAIL -->
                 <div class="form-group">
 
                     <label for="email">
@@ -65,7 +61,6 @@
                 </div>
 
 
-                <!-- SENHA -->
                 <div class="form-group">
 
                     <label for="senha">
@@ -94,7 +89,6 @@
                 </div>
 
 
-                <!-- OPÇÕES -->
                 <div class="login-options">
 
                     <label class="remember">
@@ -112,7 +106,6 @@
                 </div>
 
 
-                <!-- BOTÃO -->
                 <button type="submit" class="login-button">
 
                     <i class="fa-solid fa-right-to-bracket"></i>
@@ -124,7 +117,6 @@
             </form>
 
 
-            <!-- RODAPÉ -->
             <div class="login-footer">
 
                 <span>Prisma Mecânica</span>
@@ -145,33 +137,7 @@
     </div>
 
 
-    <script>
-
-        function mostrarSenha() {
-
-            const senha = document.getElementById("senha");
-
-            const icone = document.querySelector(".eye");
-
-            if (senha.type === "password") {
-
-                senha.type = "text";
-
-                icone.classList.remove("fa-eye");
-                icone.classList.add("fa-eye-slash");
-
-            } else {
-
-                senha.type = "password";
-
-                icone.classList.remove("fa-eye-slash");
-                icone.classList.add("fa-eye");
-
-            }
-
-        }
-
-    </script>
+    <?php require_once "javascript/senha.js" ?>
 
 </body>
 

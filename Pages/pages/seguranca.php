@@ -15,40 +15,11 @@
 
     
 <?php require_once "sidebar.php" ?>
-    <!-- CONTEÚDO -->
     <main class="main">
 
-        <!-- HEADER -->
-        <header>
-
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Pesquisar...">
-            </div>
-
-            <div class="header-right">
-
-                <i class="fa-regular fa-bell notification"></i>
-
-                <div class="profile">
-
-                    <div class="profile-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-
-                    <div>
-                        <strong>Administrator</strong>
-                        <small>Administrador</small>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </header>
+        <?php require_once "./partials/header.php" ?>
 
 
-        <!-- TÍTULO -->
         <section class="page-title">
 
             <h1>Segurança</h1>
@@ -60,11 +31,9 @@
         </section>
 
 
-        <!-- CONTEÚDO -->
         <section class="security-container">
 
 
-            <!-- ALTERAR SENHA -->
             <div class="security-card">
 
                 <div class="card-title">
@@ -151,7 +120,6 @@
 
             
 
-            <!-- SESSÕES -->
             <div class="security-card">
 
                 <div class="card-title">
@@ -218,7 +186,6 @@
             </div>
 
 
-            <!-- ATIVIDADE -->
             <div class="security-card">
 
                 <div class="card-title">

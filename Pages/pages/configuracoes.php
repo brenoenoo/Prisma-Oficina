@@ -12,43 +12,11 @@
 
    
 <?php require_once "sidebar.php" ?>
-    <!-- CONTEÚDO -->
     <main class="main">
 
-        <!-- HEADER -->
-        <header class="header">
-
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-
-                <input
-                    type="text"
-                    placeholder="Buscar no sistema..."
-                >
-            </div>
-
-            <div class="header-right">
-
-                <i class="fa-regular fa-bell notification"></i>
-
-                <div class="administrator">
-
-                    <div class="admin-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-
-                    <span>Administrador</span>
-
-                    <i class="fa-solid fa-chevron-down"></i>
-
-                </div>
-
-            </div>
-
-        </header>
+        <?php require_once "./partials/header.php" ?>
 
 
-        <!-- CONFIGURAÇÕES -->
         <section class="content">
 
             <div class="page-title">
@@ -69,7 +37,6 @@
 
             <div class="settings-layout">
 
-                <!-- MENU DE CONFIGURAÇÕES -->
                 <div class="settings-menu">
 
                     <div class="settings-menu-title">
@@ -104,11 +71,9 @@
                 </div>
 
 
-                <!-- ÁREA PRINCIPAL -->
                 <div class="settings-content">
 
 
-                    <!-- FUNCIONÁRIOS -->
                     <div class="settings-section" id="funcionarios">
 
                         <div class="section-header">
@@ -129,7 +94,6 @@
                         </div>
 
 
-                        <!-- FORMULÁRIO -->
                         <div class="form-box">
 
                             <h3>
@@ -211,7 +175,6 @@
                         </div>
 
 
-                        <!-- LISTA -->
                         <div class="employees-box">
 
                             <div class="employees-header">
@@ -235,7 +198,6 @@
 
                             <div class="employee-list">
 
-                                <!-- FUNCIONÁRIO 1 -->
                                 <div class="employee">
 
                                     <div class="employee-avatar">
@@ -269,7 +231,6 @@
                                 </div>
 
 
-                                <!-- FUNCIONÁRIO 2 -->
                                 <div class="employee">
 
                                     <div class="employee-avatar">
@@ -303,7 +264,6 @@
                                 </div>
 
 
-                                <!-- FUNCIONÁRIO 3 -->
                                 <div class="employee">
 
                                     <div class="employee-avatar">
@@ -337,7 +297,6 @@
                                 </div>
 
 
-                                <!-- FUNCIONÁRIO 4 -->
                                 <div class="employee">
 
                                     <div class="employee-avatar">
@@ -377,7 +336,6 @@
                     </div>
 
 
-                    <!-- USUÁRIOS -->
                     <div class="simple-section" id="usuarios">
 
                         <div class="simple-icon">
@@ -399,7 +357,6 @@
                     </div>
 
 
-                    <!-- OFICINA -->
                     <div class="simple-section" id="oficina">
 
                         <div class="simple-icon">
@@ -421,7 +378,6 @@
                     </div>
 
 
-                    <!-- CATEGORIAS -->
                     <div class="simple-section" id="categorias">
 
                         <div class="simple-icon">
@@ -443,7 +399,6 @@
                     </div>
 
 
-                    <!-- SEGURANÇA -->
                     <div class="simple-section" id="seguranca">
 
                         <div class="simple-icon">

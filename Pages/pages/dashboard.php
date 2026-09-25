@@ -10,36 +10,11 @@
 <body>
 
 <?php require_once "sidebar.php" ?>
-    <!-- CONTEÚDO PRINCIPAL -->
     <main class="main">
 
-        <!-- HEADER -->
-        <header class="header">
-
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Buscar no sistema...">
-            </div>
-
-            <div class="header-right">
-
-                <i class="fa-regular fa-bell notification"></i>
-
-                <div class="administrator">
-                    <div class="admin-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-
-                    <span>Administrador</span>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-
-            </div>
-
-        </header>
+        <?php require_once "./partials/header.php" ?>
 
 
-        <!-- DASHBOARD -->
         <section class="content">
 
             <div class="page-top">
@@ -57,7 +32,6 @@
             </div>
 
 
-            <!-- CARDS -->
             <div class="cards">
 
                 <div class="card">
@@ -134,7 +108,6 @@
             </div>
 
 
-            <!-- ESTOQUE CRÍTICO -->
             <div class="critical">
 
                 <div class="critical-header">
@@ -157,7 +130,6 @@
                 </div>
 
 
-                <!-- CABEÇALHO DA TABELA -->
                 <div class="table-header">
 
                     <span>Produto</span>
@@ -168,7 +140,6 @@
                 </div>
 
 
-                <!-- PRODUTO 1 -->
                 <div class="product">
 
                     <div class="product-name">
@@ -196,7 +167,6 @@
                 </div>
 
 
-                <!-- PRODUTO 2 -->
                 <div class="product">
 
                     <div class="product-name">
@@ -224,7 +194,6 @@
                 </div>
 
 
-                <!-- PRODUTO 3 -->
                 <div class="product">
 
                     <div class="product-name">
