@@ -1,0 +1,13 @@
+pode ter a tabela de veiculos
+
+todos os gerentes podem cadastrar novos gerentes
+
+Não precisa de serviços
+
+RELATORIO
+
+Relatorio - atendimento: descricao, quem fez a manutenção, e o cliente.
+
+Os funcionários registram o atendimento
+
+Os gerentes colocam o atendimento como ENUM("Aprovado","Reprovado", "Não Verificado");
