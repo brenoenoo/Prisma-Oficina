@@ -10,7 +10,6 @@ body {
     color: #f1f5f9;
 }
 
-
 .sidebar {
     position: fixed;
     left: 0;
@@ -27,9 +26,6 @@ body {
 
     padding: 28px 16px;
 }
-
-
-
 
 .logo {
     display: flex;
@@ -79,8 +75,6 @@ body {
     font-weight: bold;
 }
 
-
-
 .menu {
     display: flex;
     flex-direction: column;
@@ -123,8 +117,6 @@ body {
 
     color: white;
 }
-
-
 
 .sidebar-bottom {
     margin-top: auto;
@@ -176,8 +168,6 @@ body {
 .logout {
     color: #8da8c2;
 }
-
-
 
 .main {
     margin-left: 280px;
@@ -269,7 +259,6 @@ body {
     margin-top: 5px;
 }
 
-
 .form {
     padding: 25px;
 
@@ -342,7 +331,6 @@ body {
     background: #102238;
 }
 
-
 .money-input {
     display: flex;
 
@@ -384,7 +372,6 @@ body {
 .money-input:focus-within {
     border-color: #159cff;
 }
-
 
 .buttons {
     padding: 0 25px 25px;
@@ -443,8 +430,6 @@ body {
     margin-right: 7px;
 }
 
-
-
 @media (max-width: 900px) {
 
     .sidebar {
@@ -479,7 +464,6 @@ body {
         width: 350px;
     }
 }
-
 
 @media (max-width: 600px) {
 

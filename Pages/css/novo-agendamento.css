@@ -12,7 +12,6 @@ body {
     color: #ffffff;
 }
 
-
 .sidebar {
     position: fixed;
     left: 0;
@@ -30,11 +29,6 @@ body {
     padding: 28px 16px;
 }
 
-
-/* =========================
-   LOGO
-========================= */
-
 .logo {
     display: flex;
     align-items: center;
@@ -43,7 +37,6 @@ body {
     padding: 0 18px 35px;
 }
 
-/* ÁREA DA IMAGEM DA LOGO */
 .logo-image {
     width: 250px;
     height: auto;
@@ -59,7 +52,6 @@ body {
     flex-shrink: 0;
 }
 
-/* IMAGEM */
 .logo-image img {
     width: 100%;
     height: 100%;
@@ -68,7 +60,6 @@ body {
     display: block;
 }
 
-/* NOME */
 .logo h2 {
     font-size: 24px;
     letter-spacing: 1px;
@@ -85,9 +76,6 @@ body {
     letter-spacing: 2px;
     font-weight: bold;
 }
-
-
-/* MENU */
 
 nav {
     display: flex;
@@ -128,9 +116,6 @@ nav a.active {
 
     color: #ffffff;
 }
-
-
-/* SIDEBAR BOTTOM */
 
 .sidebar-bottom {
     margin-top: auto;
@@ -186,17 +171,11 @@ nav a.active {
     color: #71869c;
 }
 
-
-/* MAIN */
-
 .main {
     margin-left: 280px;
 
     min-height: 100vh;
 }
-
-
-/* HEADER */
 
 header {
     height: 80px;
@@ -209,9 +188,6 @@ header {
 
     padding: 0 35px;
 }
-
-
-/* SEARCH */
 
 .search {
     width: 350px;
@@ -249,9 +225,6 @@ header {
 .search input::placeholder {
     color: #607890;
 }
-
-
-/* HEADER DIREITA */
 
 .header-right {
     display: flex;
@@ -304,9 +277,6 @@ header {
     font-size: 11px;
 }
 
-
-/* TÍTULO */
-
 .page-title {
     padding: 35px 40px 25px;
 }
@@ -323,9 +293,6 @@ header {
     font-size: 14px;
 }
 
-
-/* CARD */
-
 .form-card {
     margin: 0 40px 40px;
 
@@ -337,9 +304,6 @@ header {
 
     padding: 30px;
 }
-
-
-/* SEÇÃO */
 
 .form-section {
     padding-bottom: 30px;
@@ -354,9 +318,6 @@ header {
 
     margin-bottom: 0;
 }
-
-
-/* TÍTULO DA SEÇÃO */
 
 .section-title {
     display: flex;
@@ -394,9 +355,6 @@ header {
     font-size: 12px;
 }
 
-
-/* GRID */
-
 .form-grid {
     display: grid;
 
@@ -404,9 +362,6 @@ header {
 
     gap: 20px;
 }
-
-
-/* CAMPOS */
 
 .form-group {
     display: flex;
@@ -473,9 +428,6 @@ header {
 .form-group textarea:focus {
     border-color: #159cff;
 }
-
-
-/* STATUS */
 
 .status-options {
     display: flex;
@@ -555,9 +507,6 @@ header {
     font-size: 11px;
 }
 
-
-/* BOTÕES */
-
 .form-buttons {
     display: flex;
 
@@ -611,9 +560,6 @@ header {
     margin-right: 7px;
 }
 
-
-/* RESPONSIVO */
-
 @media (max-width: 900px) {
 
     .sidebar {
@@ -639,7 +585,6 @@ header {
         margin-left: 80px;
     }
 }
-
 
 @media (max-width: 650px) {
 
