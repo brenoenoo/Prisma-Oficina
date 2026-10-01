@@ -15,23 +15,17 @@
     <main class="main">
 
     <?php require_once "./partials/header.php" ?>
-
-
         <section class="content">
             <div class="page-title">
                 <div class="section-name">
                     <i class="fa-solid fa-box"></i>
                     ESTOQUE
                 </div>
-
                 <h1>Cadastrar Produto</h1>
-
                 <p>
                     Adicione um novo produto ao estoque da oficina.
                 </p>
             </div>
-
-
             <div class="card">
                 <div class="card-header">
 
@@ -47,8 +41,6 @@
                         </p>
                     </div>
                 </div>
-
-
                 <form class="form">
                     <div class="input-group full">
 
@@ -60,22 +52,17 @@
                             required
                         >
                     </div>
-
-
                     <div class="input-group">
                         <label>Código do produto</label>
 
                         <input
                             type="text"
-                            placeholder="Ex: FIL-001"
->
+                            placeholder="Ex: FIL-001">
                     </div>
-
-
                     <div class="input-group">
 
                         <label>Categoria</label>
-
+                        
                         <select required>
 
                             <option value="">
@@ -114,20 +101,11 @@
 
                     </div>
 
-
                     <div class="input-group">
-
                         <label>Marca</label>
-
-                        <input
-                            type="text"
-                            placeholder="Ex: Bosch"
-                        >
-
-                    </div>
-
-
-                    <div class="input-group">
+                        <input type="text" placeholder="Ex: Bosch"></div>
+                    
+                        <div class="input-group">
 
                         <label>Unidade</label>
 
@@ -146,29 +124,15 @@
 
 
                     <div class="input-group">
-
                         <label>Quantidade em estoque</label>
-
-                        <input
-                            type="number"
-                            min="0"
-                            placeholder="0"
-                            required
-                        >
-
+                        <input type="number" min="0" placeholder="0" required>
                     </div>
 
 
                     <div class="input-group">
-
                         <label>Estoque mínimo</label>
 
-                        <input
-                            type="number"
-                            min="0"
-                            placeholder="Ex: 5"
-                        >
-
+                        <input  type="number" min="0" placeholder="Ex: 5" >
                     </div>
 
 
