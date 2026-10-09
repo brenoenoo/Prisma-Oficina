@@ -1,0 +1,82 @@
+* {
+margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body { width: 100%; min-height: 100%; }
+
+body { font-family: Arial, Helvetica, sans-serif; background: #07111f; color: #f1f5f9; }
+
+.layout { width: 100%; min-height: 100vh; }
+
+.main-content { width: calc(100% - 280px); min-height: 100vh; margin-left: 280px; background: #07111f; position: relative; z-index: 1; }
+
+.agendamento-container { width: 100%; max-width: 1250px; margin: 0 auto; padding: 45px 50px 70px; }
+
+.page-header { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 30px; margin-bottom: 38px; }
+
+.page-header h1 { color: #f8fafc; font-size: 36px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 10px; }
+
+.page-header p { color: #7f9ab5; font-size: 14px; line-height: 1.6; }
+
+.btn-voltar { height: 44px; padding: 0 20px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; background: #102238; border: 1px solid #1d3c5d; border-radius: 9px; color: #a9c2da; text-decoration: none; font-size: 13px; font-weight: 600; transition: all .2s ease; }
+
+.btn-voltar:hover { background: #142d49; border-color: #2c587e; color: #ffffff; transform: translateY(-1px); }
+
+.alert-error { width: 100%; display: flex; align-items: center; gap: 13px; margin-bottom: 30px; padding: 17px 20px; border-radius: 10px; background: #3a202b; border: 1px solid #713449; color: #ff657b; font-size: 13px; }
+
+.form-card { width: 100%; background: #0b192b; border: 1px solid #1a3653; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, .25); }
+
+.form-section { padding: 38px 40px 42px; background: #0d1c2f; }
+
+.form-section + .form-section { border-top: 1px solid #1a3653; }
+
+.section-title { display: flex; align-items: center; gap: 17px; margin-bottom: 34px; }
+
+.section-title > i { width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: rgba(21, 156, 255, .12); border: 1px solid rgba(21, 156, 255, .25); color: #159cff; font-size: 20px; }
+
+.section-title h2 { color: #f1f5f9; font-size: 19px; margin-bottom: 7px; }
+
+.section-title p { color: #7893ae; font-size: 13px; }
+
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 28px; row-gap: 26px; }
+
+.form-group { min-width: 0; display: flex; flex-direction: column; gap: 10px; }
+
+.form-group.full { grid-column: 1 / -1; }
+
+.form-group label { color: #a9bdd1; font-size: 13px; font-weight: 600; }
+
+.form-group input, .form-group select, .form-group textarea { width: 100%; border: 1px solid #1d3d5e; outline: none; background: #102238; color: #f1f5f9; font-family: Arial, Helvetica, sans-serif; font-size: 14px; transition: .2s ease; }
+
+.form-group input, .form-group select { height: 48px; padding: 0 15px; border-radius: 9px; }
+
+.form-group textarea { min-height: 145px; padding: 15px; border-radius: 9px; resize: vertical; line-height: 1.6; }
+
+.form-group input::placeholder, .form-group textarea::placeholder { color: #607995; }
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: #159cff; box-shadow: 0 0 0 3px rgba(21, 156, 255, .10); }
+
+.form-group select option { background: #102238; color: #f1f5f9; }
+
+.form-group input[type="date"], .form-group input[type="time"] { color-scheme: dark; }
+
+.form-actions { display: flex; align-items: center; justify-content: flex-end; gap: 14px; padding: 25px 40px; background: #091727; border-top: 1px solid #1a3653; }
+
+.btn-cancelar { height: 46px; padding: 0 23px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #1d3d5e; border-radius: 9px; background: #102238; color: #9db8d2; text-decoration: none; font-size: 13px; font-weight: 600; }
+
+.btn-salvar { height: 46px; padding: 0 25px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: none; border-radius: 9px; background: linear-gradient(135deg, #159cff, #087bd2); color: #ffffff; font-size: 13px; font-weight: 700; cursor: pointer; }
+
+@media (max-width: 900px) { .main-content { width: calc(100% - 80px); margin-left: 80px; }
+
+.agendamento-container { padding: 32px 25px 50px; } }
+
+@media (max-width: 700px) { .agendamento-container { padding: 25px 18px 40px; }
+
+.form-grid { grid-template-columns: 1fr; }
+
+.form-group.full { grid-column: auto; }
+
+.page-header { align-items: flex-start; flex-direction: column; }
+
+.form-actions { flex-direction: column-reverse; align-items: stretch; }
+
+.btn-cancelar, .btn-salvar, .btn-voltar { width: 100%; } }
